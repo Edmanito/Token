@@ -162,7 +162,50 @@ void parcourSuffixe(Arbre* arbre){
 
 
 
+/////////////////////////////////       AVL     ////////////////////////////////////
 
+
+typedef struct{
+    int valeur;
+    int equilibre;
+    struct ArbreVL* fg
+    struct ArbreVL* fd
+}ArbreVL;
+
+
+
+
+Arbre* rotationGauche(ArbreVL* arbre){
+    Arbre* pivot = arbre->fd;
+    arbre->fd = pivot->fg
+    pivot->fg = arbre;
+
+    arbre->equilibre = hauteur(a->fd) - hauteur(a->fg);
+    pivot->equilibre = hauteur(pivot->fd) - hauteur(pivot->fg);
+
+    return pivot;
+}
+
+Arbre* rotaionDroite(ArbreVL* arbre){
+    Arbre* pivot = arbre->fg;
+    arbre->fg = pivot->fd
+    pivot->fd = arbre;
+
+
+    arbre->equilibre = hauteur(a->fd) - hauteur(a->fg);
+    pivot->equilibre = hauteur(pivot->fd) - hauteur(pivot->fg);
+    
+    return pivot;
+}
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
 
 int main(void){
 

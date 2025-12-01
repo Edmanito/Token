@@ -5,7 +5,7 @@
 
 int main(void){
 
-    printf("\n Test \n\n");
+    llolololol
     return 0;
 }
 
